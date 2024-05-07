@@ -6,6 +6,7 @@ import ErrorPage from "./routes/ErrorPage.tsx";
 
 import PageHeader from "./components/PageHeader.tsx";
 import Featured from "./routes/Featured.tsx";
+import RandomPage from "./routes/RandomPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,16 @@ const router = createBrowserRouter([
       </>
     ),
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "random",
+    element: (
+      <>
+        <ResponsiveAppBar />
+        <PageHeader title="Random" />
+        <RandomPage />
+      </>
+    ),
   },
 ]);
 

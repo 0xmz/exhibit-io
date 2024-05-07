@@ -1,5 +1,13 @@
+import PageHeader from "./components/PageHeader";
+import Featured from "./routes/Featured";
+
 function App() {
-  return;
+  return (
+    <>
+      <PageHeader title="Featured" />
+      <Featured ids="27992,28560,22221" />
+    </>
+  );
 }
 
 export default App;

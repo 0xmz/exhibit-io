@@ -1,27 +1,18 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import FeatureBox from "../components/FeatureBox";
-import { Artwork } from "../types/ArtworkType";
+import useGetArtwork from "../api/useGetArtwork";
+import Loading from "../components/Loading";
 
 export type FeaturedPropType = {
   ids: string;
 };
 
 const Featured = ({ ids }: FeaturedPropType) => {
-  const [artworkInfo, setArtworkInfo] = useState<Artwork[]>([]);
-  useEffect(() => {
-    axios
-      .get(
-        `https://api.artic.edu/api/v1/artworks?ids=${ids}&fields=id,title,image_id,artist_title`
-      )
-      .then(function (response) {
-        const artworks: Artwork[] = [];
-        for (const i in response.data.data) {
-          artworks.push(response.data.data[i]);
-        }
-        setArtworkInfo(artworks);
-      });
-  }, []);
+  const { artworkInfo, isLoading } = useGetArtwork(ids);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return <FeatureBox artworks={artworkInfo}></FeatureBox>;
 };
 

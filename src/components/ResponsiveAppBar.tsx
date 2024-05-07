@@ -11,7 +11,23 @@ import {
   MenuItem,
 } from "@mui/material";
 
-const pages = ["Featured", "Create", "Explore", "Blog", "For Educators"];
+const pages = [
+  "Featured",
+  "Create",
+  "Explore",
+  "Blog",
+  "For Educators",
+  "Random",
+];
+
+const pageLinks = [
+  "/",
+  "/create",
+  "/explore",
+  "/blog",
+  "/for-educators",
+  "/random",
+];
 
 const ResponsiveAppBar = (): React.ReactElement => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -102,10 +118,11 @@ const ResponsiveAppBar = (): React.ReactElement => {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map((page, link) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                href={pageLinks[link]}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
