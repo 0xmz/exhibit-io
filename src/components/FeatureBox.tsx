@@ -35,6 +35,7 @@ const FeatureBox = ({ artworks }: FeatureBoxPropType) => {
           <Typography>{artwork.artist_title}</Typography>
           <Typography>{artwork.id}</Typography>
           <Typography>{artwork.image_id}</Typography>
+          <Typography>{artwork.description}</Typography>
           <img
             src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
           ></img>

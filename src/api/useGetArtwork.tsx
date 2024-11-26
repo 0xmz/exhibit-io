@@ -9,7 +9,7 @@ export default function useGetArtwork(ids: string) {
   useEffect(() => {
     axios
       .get(
-        `https://api.artic.edu/api/v1/artworks?ids=${ids}&fields=id,title,image_id,artist_title`
+        `https://api.artic.edu/api/v1/artworks?ids=${ids}&fields=id,title,image_id,artist_title,description`
       )
       .then(function (response) {
         const artworks: Artwork[] = [];
@@ -18,6 +18,7 @@ export default function useGetArtwork(ids: string) {
         }
         setArtworkInfo(artworks);
         setIsLoading(false);
+        console.log(response.data.data);
       });
   }, [ids, isLoading]);
   return { artworkInfo, isLoading };

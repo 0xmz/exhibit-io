@@ -13,6 +13,7 @@ import {
 
 const pages = [
   "Featured",
+  "Exhibit",
   "Create",
   "Explore",
   "Blog",
@@ -22,6 +23,7 @@ const pages = [
 
 const pageLinks = [
   "/",
+  "/exhibit",
   "/create",
   "/explore",
   "/blog",
