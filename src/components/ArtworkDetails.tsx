@@ -1,8 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { Card } from "@mui/material";
 import useFetch from "../api/useFetch";
 import { BASE_API_URL } from "../utils/constants";
+import { Artwork } from "../types/ArtworkType";
+import PageHeader from "./PageHeader";
 
 export type ArtworkDetailsPropType = {
-  artworkId: string;
+  artworkId: string | undefined;
 };
 
 const ArtworkDetails = ({ artworkId }: ArtworkDetailsPropType) => {
@@ -21,16 +25,21 @@ const ArtworkDetails = ({ artworkId }: ArtworkDetailsPropType) => {
 
         {exhibit ? (
           <>
-            <h1>ID: {exhibit[0].artworks[0].id}</h1>
-            <h2>{exhibit[0].artworks[0].image_id}</h2>
-            <p>{exhibit[0].artworks[0].title}</p>
-            <p>{exhibit[0].artworks[0].artist_title}</p>
-            <img
-              src={`https://www.artic.edu/iiif/2/${exhibit[0].artworks[0].image_id}/full/843,/0/default.jpg`}
-            ></img>
+            <PageHeader title={exhibit[0].title} />
+            {exhibit[0].artworks.map((artwork: Artwork) => (
+              <Card key={artwork.id}>
+                <h1>{artwork.id}</h1>
+                <h2>{artwork.image_id}</h2>
+                <p>{artwork.title}</p>
+                <p>{artwork.artist_title}</p>
+                <img
+                  src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
+                ></img>
+              </Card>
+            ))}
           </>
         ) : (
-          "nothing"
+          "Loading..."
         )}
       </section>
     </>

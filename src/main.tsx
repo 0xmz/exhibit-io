@@ -8,6 +8,7 @@ import PageHeader from "./components/PageHeader.tsx";
 import Featured from "./routes/Featured.tsx";
 import RandomPage from "./routes/RandomPage.tsx";
 import ExhibitPage from "./routes/ExhibitPage.tsx";
+import ExhibitListPage from "./routes/ExhibitListPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -32,12 +33,21 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "exhibit",
+    path: "exhibit/:id",
     element: (
       <>
         <ResponsiveAppBar />
-        <PageHeader title="Exhibit" />
-        <ExhibitPage ids={["1", "2"]} />
+        <ExhibitPage />
+      </>
+    ),
+  },
+  {
+    path: "exhibit-list",
+    element: (
+      <>
+        <ResponsiveAppBar />
+        <PageHeader title="Exhibit List" />
+        <ExhibitListPage />
       </>
     ),
   },

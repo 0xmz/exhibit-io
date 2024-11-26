@@ -23,7 +23,7 @@ const pages = [
 
 const pageLinks = [
   "/",
-  "/exhibit",
+  "/exhibit-list",
   "/create",
   "/explore",
   "/blog",

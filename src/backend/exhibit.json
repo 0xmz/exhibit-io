@@ -2,18 +2,26 @@
   "exhibit": [
     {
       "id": 1,
+      "title": "My Exhibit",
       "artworks": [
         {
           "id": "142273",
           "image_id": "a6c633dc-2e51-ec6e-758b-91deacc32038",
           "title": "Tetradrachm (Coin) Portraying Emperor Nero",
           "artist_title": "Ancient Egyptian"
+        },
+        {
+          "id": "6666",
+          "image_id": "25681eda-8516-323e-ce5d-a523335c081d",
+          "title": "Plaque (one of a pair)",
+          "artist_title": null
         }
       ],
-      "description": "<p>The front (obverse) of this coin portrays the bust of Emperor Nero, facing right, radiate, wearing a cuirass (armoured breast plate), and aegis (shield).  The date this coin was struck is indicated in the inscription &quot; LIΓ &quot;, which means the thirteenth year of his reign, or 66-67 CE. Nero reigned as emperor from 54-68 CE.<br>The back (reverse) portrays the head of Tiberius, facing right.</p>\n"
+      "description": "The front (obverse) of this coin portrays the bust of Emperor Nero, facing right, radiate, wearing a cuirass (armoured breast plate), and aegis (shield).  The date this coin was struck is indicated in the inscription &quot; LIΓ &quot;, which means the thirteenth year of his reign, or 66-67 CE. Nero reigned as emperor from 54-68 CE.<br>The back (reverse) portrays the head of Tiberius, facing right.\n"
     },
     {
       "id": 2,
+      "title": "Exhibit ABC",
       "artworks": [
         {
           "id": "6666",

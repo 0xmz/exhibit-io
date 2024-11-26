@@ -2,10 +2,10 @@ import { Box, Card } from "@mui/material";
 import ArtworkDetails from "./ArtworkDetails";
 
 export type ArtworkListPropType = {
-  artworks: string[];
+  exhibitId: string | undefined;
 };
 
-const ArtworkList = ({ artworks }: ArtworkListPropType) => {
+const ArtworkList = ({ exhibitId }: ArtworkListPropType) => {
   return (
     <Box
       sx={{
@@ -21,19 +21,9 @@ const ArtworkList = ({ artworks }: ArtworkListPropType) => {
           alignItems: "center",
         }}
       ></Box>
-      {artworks.map((artwork, i) => (
-        <Card
-          key={artwork}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <ArtworkDetails artworkId={artworks[i]} />
-        </Card>
-      ))}
+      <Card>
+        <ArtworkDetails artworkId={exhibitId} />
+      </Card>
     </Box>
   );
 };
