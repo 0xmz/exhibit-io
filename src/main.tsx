@@ -9,6 +9,8 @@ import Featured from "./routes/Featured.tsx";
 import RandomPage from "./routes/RandomPage.tsx";
 import ExhibitPage from "./routes/ExhibitPage.tsx";
 import ExhibitListPage from "./routes/ExhibitListPage.tsx";
+import CreateExhibitPage from "./routes/CreateExhibitPage.tsx";
+import ExplorePage from "./routes/ExplorePage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,24 @@ const router = createBrowserRouter([
         <ResponsiveAppBar />
         <PageHeader title="Exhibit List" />
         <ExhibitListPage />
+      </>
+    ),
+  },
+  {
+    path: "create-exhibit",
+    element: (
+      <>
+        <ResponsiveAppBar />
+        <CreateExhibitPage />
+      </>
+    ),
+  },
+  {
+    path: "explore",
+    element: (
+      <>
+        <ResponsiveAppBar />
+        <ExplorePage />
       </>
     ),
   },

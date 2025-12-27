@@ -1,34 +1,52 @@
-# React + TypeScript + Vite
+# Exhibit.io
 
-For the backend, ensure `json-server` is installed globally.
+A React application for creating and viewing art exhibitions using the Art Institute of Chicago API.
 
-In `src/backend` run `json-server exhibit.json` to run the mock backend.
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- View featured artworks
+- Browse random artworks
+- Create custom exhibitions by searching and selecting artworks from the Art Institute of Chicago collection
+- View exhibition lists and individual exhibitions
+- Explore all exhibitions with pagination (10 per page)
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Start the mock backend:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   npm run server
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+   This starts json-server on port 3001 serving the exhibit data.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   This starts the Vite dev server on port 5173.
+
+## Usage
+
+- Navigate to the "Create" page to create a new exhibition
+- Search for artworks using the search bar
+- Select artworks to add to your exhibition
+- Fill in exhibition details (title, curator, description)
+- Save the exhibition
+- View all exhibitions on the "Exhibit" page
+
+## Backend
+
+The application uses json-server for a mock REST API. Exhibition data is stored in `src/backend/exhibit.json`.
+
+## API
+
+- GET /exhibit - Get all exhibitions
+- GET /exhibit/:id - Get a specific exhibition
+- POST /exhibit - Create a new exhibition

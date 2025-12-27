@@ -1,10 +1,9 @@
 // TODO: Create paginated API that returns exhibit listing from database
 
 import { Button, Grid, Paper, styled } from "@mui/material";
-
-export type ExhibitListPropType = {
-  id: string;
-};
+import useFetch from "../api/useFetch";
+import { BASE_API_URL } from "../utils/constants";
+import { Exhibit } from "../types/ExhibitType";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -18,23 +17,25 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const ExhibitListPage = () => {
+  const { data: exhibits, isPending, error } = useFetch(BASE_API_URL);
+
+  if (isPending) return <p>Loading exhibits...</p>;
+  if (error) return <p>Error: {error}</p>;
+
   return (
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      {exhibits?.map((exhibit: Exhibit) => (
+        <Grid item xs={6} key={exhibit.id}>
+          <Item>
+            <Button href={`exhibit/${exhibit.id}`}>{exhibit.title}</Button>
+            <p>Curated by: {exhibit.curator}</p>
+          </Item>
+        </Grid>
+      ))}
       <Grid item xs={6}>
         <Item>
-          <Button href="exhibit/1">Exhibit 1</Button>
+          <Button href="/create-exhibit">Create New Exhibit</Button>
         </Item>
-      </Grid>
-      <Grid item xs={6}>
-        <Item>
-          <Button href="exhibit/2">Exhibit 2</Button>
-        </Item>
-      </Grid>
-      <Grid item xs={6}>
-        <Item>3</Item>
-      </Grid>
-      <Grid item xs={6}>
-        <Item>4</Item>
       </Grid>
     </Grid>
   );

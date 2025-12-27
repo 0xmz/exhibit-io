@@ -22,7 +22,7 @@ const ArtworkList = ({ exhibitId }: ArtworkListPropType) => {
         }}
       ></Box>
       <Card>
-        <ArtworkDetails artworkId={exhibitId} />
+        <ArtworkDetails exhibitId={exhibitId} />
       </Card>
     </Box>
   );

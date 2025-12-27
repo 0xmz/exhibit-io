@@ -24,7 +24,7 @@ const pages = [
 const pageLinks = [
   "/",
   "/exhibit-list",
-  "/create",
+  "/create-exhibit",
   "/explore",
   "/blog",
   "/for-educators",
@@ -93,9 +93,16 @@ const ResponsiveAppBar = (): React.ReactElement => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <a
+                      href={pageLinks[index]}
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      {page}
+                    </a>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

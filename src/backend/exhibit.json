@@ -1,8 +1,9 @@
 {
   "exhibit": [
     {
-      "id": 1,
+      "id": "1",
       "title": "My Exhibit",
+      "curator": "Pepper Ph.D",
       "artworks": [
         {
           "id": "142273",
@@ -20,8 +21,9 @@
       "description": "The front (obverse) of this coin portrays the bust of Emperor Nero, facing right, radiate, wearing a cuirass (armoured breast plate), and aegis (shield).  The date this coin was struck is indicated in the inscription &quot; LIΓ &quot;, which means the thirteenth year of his reign, or 66-67 CE. Nero reigned as emperor from 54-68 CE.<br>The back (reverse) portrays the head of Tiberius, facing right.\n"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Exhibit ABC",
+      "curator": "Coca Cola",
       "artworks": [
         {
           "id": "6666",
@@ -31,6 +33,191 @@
         }
       ],
       "description": null
+    },
+    {
+      "id": "1aff",
+      "title": "test",
+      "curator": "test",
+      "description": "test",
+      "artworks": [
+        {
+          "id": 21701,
+          "title": "Baluster-Shaped Vase with Peony Flowers",
+          "image_id": "a4d4a049-da98-577c-50a5-950fff772e9f",
+          "artist_title": "Unknown",
+          "description": ""
+        },
+        {
+          "id": 132148,
+          "title": "Pillow with Boy Supporting a Cloud-Shaped Headdrest",
+          "image_id": "d6f01edf-fa30-ed35-5d75-4bff3d32ef81",
+          "artist_title": "Unknown",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "a5e6",
+      "title": "test",
+      "curator": "test",
+      "description": "test",
+      "artworks": [
+        {
+          "id": 12508,
+          "title": "The George Cowper Album",
+          "image_id": "4b0da691-c5d2-df4b-74a5-029a42ef847b",
+          "artist_title": "Unknown",
+          "description": ""
+        },
+        {
+          "id": 151759,
+          "title": "#123, Tokyo",
+          "image_id": "3777ace9-8fb9-4b1a-e7f1-c69fd45f0338",
+          "artist_title": "Yasuhiro Ishimoto",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Modern Art Collection",
+      "curator": "Jane Smith",
+      "artworks": [
+        {
+          "id": "12345",
+          "image_id": "sample-image-1",
+          "title": "Abstract Painting",
+          "artist_title": "Modern Artist"
+        }
+      ],
+      "description": "A collection of modern art pieces."
+    },
+    {
+      "id": "4",
+      "title": "Sculpture Exhibition",
+      "curator": "Bob Johnson",
+      "artworks": [
+        {
+          "id": "67890",
+          "image_id": "sample-image-2",
+          "title": "Bronze Statue",
+          "artist_title": "Sculptor"
+        }
+      ],
+      "description": "Various sculptures from different eras."
+    },
+    {
+      "id": "5",
+      "title": "Photography Showcase",
+      "curator": "Alice Brown",
+      "artworks": [
+        {
+          "id": "11111",
+          "image_id": "sample-image-3",
+          "title": "Cityscape",
+          "artist_title": "Photographer"
+        }
+      ],
+      "description": "Black and white photography collection."
+    },
+    {
+      "id": "6",
+      "title": "Digital Art",
+      "curator": "Charlie Wilson",
+      "artworks": [
+        {
+          "id": "22222",
+          "image_id": "sample-image-4",
+          "title": "Digital Landscape",
+          "artist_title": "Digital Artist"
+        }
+      ],
+      "description": "Contemporary digital art pieces."
+    },
+    {
+      "id": "7",
+      "title": "Historical Paintings",
+      "curator": "Diana Davis",
+      "artworks": [
+        {
+          "id": "33333",
+          "image_id": "sample-image-5",
+          "title": "Historical Scene",
+          "artist_title": "Historical Painter"
+        }
+      ],
+      "description": "Paintings depicting historical events."
+    },
+    {
+      "id": "8",
+      "title": "Nature Inspired",
+      "curator": "Eve Garcia",
+      "artworks": [
+        {
+          "id": "44444",
+          "image_id": "sample-image-6",
+          "title": "Forest Scene",
+          "artist_title": "Nature Artist"
+        }
+      ],
+      "description": "Art inspired by nature."
+    },
+    {
+      "id": "9",
+      "title": "Portrait Gallery",
+      "curator": "Frank Miller",
+      "artworks": [
+        {
+          "id": "55555",
+          "image_id": "sample-image-7",
+          "title": "Famous Portrait",
+          "artist_title": "Portrait Artist"
+        }
+      ],
+      "description": "Collection of portrait paintings."
+    },
+    {
+      "id": "10",
+      "title": "Abstract Expressions",
+      "curator": "Grace Lee",
+      "artworks": [
+        {
+          "id": "66666",
+          "image_id": "sample-image-8",
+          "title": "Abstract Expression",
+          "artist_title": "Abstract Artist"
+        }
+      ],
+      "description": "Abstract expressionist artworks."
+    },
+    {
+      "id": "11",
+      "title": "Street Art",
+      "curator": "Henry Taylor",
+      "artworks": [
+        {
+          "id": "77777",
+          "image_id": "sample-image-9",
+          "title": "Urban Mural",
+          "artist_title": "Street Artist"
+        }
+      ],
+      "description": "Contemporary street art collection."
+    },
+    {
+      "id": "ccdd",
+      "title": "eggs",
+      "curator": "test",
+      "description": "test",
+      "artworks": [
+        {
+          "id": 8360,
+          "title": "Te burao (The Hibiscus Tree)",
+          "image_id": "604fe021-6008-f666-bce8-456b2fdc9bd4",
+          "artist_title": "Paul Gauguin",
+          "description": "<p>Completed early in Paul Gauguin’s first Tahitian sojourn, this landscape shows the artist grappling with representing an unfamiliar environment. Rather than documenting botanical species scientifically, Gauguin focused on the artistic potential of their variegated colors, textures, and forms. The human figure in the distance and the dog roaming through fallen branches activate the landscape and establish a sense of scale.</p>\n<p>This is one of thirty-five works that comprise the Winterbotham Collection. <a href=\"https://www.artic.edu/the-winterbotham-collection\">Click here to learn more about the collection.</a></p>\n"
+        }
+      ]
     }
   ]
 }
