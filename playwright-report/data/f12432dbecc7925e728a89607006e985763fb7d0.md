@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "EXHIBIT.IO" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - link "Featured" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - text: Featured
+        - link "Exhibit" [ref=e9] [cursor=pointer]:
+          - /url: /exhibit-list
+          - text: Exhibit
+        - link "Create" [ref=e10] [cursor=pointer]:
+          - /url: /create-exhibit
+          - text: Create
+        - link "Explore" [ref=e11] [cursor=pointer]:
+          - /url: /explore
+          - text: Explore
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+          - text: Blog
+        - link "For Educators" [ref=e13] [cursor=pointer]:
+          - /url: /for-educators
+          - text: For Educators
+        - link "Random" [ref=e14] [cursor=pointer]:
+          - /url: /random
+          - text: Random
+  - heading "Featured" [level=1] [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e20]: A Sunday on La Grande Jatte — 1884
+      - paragraph [ref=e21]: Georges Seurat
+      - paragraph [ref=e22]: "27992"
+      - paragraph [ref=e23]: 2d484387-2509-5e8e-2c43-22f9981972eb
+      - paragraph [ref=e24]: <p>In his best-known and largest painting, Georges Seurat depicted people from different social classes strolling and relaxing in a park just west of Paris on La Grande Jatte, an island in the Seine River. Although he took his subject from modern life, Seurat sought to evoke the sense of timelessness associated with ancient art, especially Egyptian and Greek sculpture. He once wrote, “I want to make modern people, in their essential traits, move about as they do on those friezes, and place them on canvases organized by harmonies of color.”</p> <p>Seurat painted <em>A Sunday on La Grande Jatte—1884</em> using pointillism, a highly systematic and scientific technique based on the hypothesis that closely positioned points of pure color mix together in the viewer’s eye. He began work on the canvas in 1884 (and included this date in the title) with a layer of small, horizontal brushstrokes in complementary colors. He next added a series of dots that coalesce into solid and luminous forms when seen from a distance. Sometime before 1889 Seurat added a border of blue, orange, and red dots that provide a visual transition between the painting’s interior and the specially designed white frame, <a href="https://www.artic.edu/articles/969/la-grande-jatte-frame-by-frame">which has been re-created at the Art Institute</a>.</p>
+      - img [ref=e25]
+    - generic [ref=e26]:
+      - generic [ref=e29]: The Bedroom
+      - paragraph [ref=e30]: Vincent van Gogh
+      - paragraph [ref=e31]: "28560"
+      - paragraph [ref=e32]: 25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e
+      - paragraph [ref=e33]: "<p>Vincent van Gogh so highly esteemed his bedroom painting that he made three distinct versions: the first, now in the collection of the Van Gogh Museum, Amsterdam; the second, belonging to the Art Institute of Chicago, painted a year later on the same scale and almost identical; and a third, smaller canvas in the collection of the Musée d’Orsay, Paris, which he made as a gift for his mother and sister. Van Gogh conceived the first <em>Bedroom</em> in October 1888, a month after he moved into his “Yellow House” in Arles, France. This moment marked the first time the artist had a home of his own, and he had immediately and enthusiastically set about decorating, painting a suite of canvases to fill the walls. Completely exhausted from the effort, he spent two-and-a-half days in bed and was then inspired to create a painting of his bedroom. As he wrote to his brother Theo, “It amused me enormously doing this bare interior. With a simplicity à la Seurat. In ﬂat tints, but coarsely brushed in full impasto, the walls pale lilac, the ﬂoor in a broken and faded red, the chairs and the bed chrome yellow, the pillows and the sheet very pale lemon green, the bedspread blood-red, the dressing-table orange, the washbasin blue, the window green. I had wished to express utter repose with all these very different tones.” Although the picture symbolized relaxation and peace to the artist, to our eyes the canvas seems to teem with nervous energy, instability, and turmoil, an effect heightened by the sharply receding perspective.</p>"
+      - img [ref=e34]
+    - generic [ref=e35]:
+      - generic [ref=e38]: The Actor Segawa Kikunojo III as Kumenosuke in the Play Keisei Natori Soga, Performed at the Kiri Theater in the Second Month, 1788
+      - paragraph [ref=e39]: Katsukawa Shunkо̄
+      - paragraph [ref=e40]: "22221"
+      - paragraph [ref=e41]: 26686eb6-bd6f-8cd2-b512-797d6e3cade6
+      - paragraph
+      - img [ref=e42]
+```
